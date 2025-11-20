@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/rahulsinghpython/personal-website/compare/v1.3.0...v1.4.0) (2025-11-20)
+
+
+### Features
+
+* Added cognizant to work experience and fixed alot of linting in the code. ([e930e0b](https://github.com/rahulsinghpython/personal-website/commit/e930e0b890b53164f5062285037f5cb3869016ac))
+
 ## [1.3.0](https://github.com/rahulsinghpython/personal-website/compare/v1.2.0...v1.3.0) (2024-11-11)
 
 
