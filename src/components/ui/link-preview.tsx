@@ -138,7 +138,6 @@ export const LinkPreview = ({
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
-                    // style={{ quality, layout }}
                     className="rounded-lg"
                     alt="preview image"
                   />

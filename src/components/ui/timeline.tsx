@@ -21,7 +21,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
-  console.log(data[0].images);
 
   useEffect(() => {
     if (ref.current) {
@@ -84,17 +83,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     <Divider />
                   </div>
                   <h3 className="hidden md:block pr-20 pl-20  font-bold text-neutral-500 dark:text-neutral-500 ">
-                    {/* {item.title} */}
 
                     {item.logo ? (
                       <div
                         className="w-full max-w-xs rounded-md mx-auto pr-10 pl-10"
-                        // style={{
-                        //   marginRight: "7rem",
-                        //   // padding: "3rem",
-
-                        //   padding: "2rem",
-                        // }}
                       >
                         <Image src={item.logo} preview={false} />
                       </div>
@@ -121,15 +113,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     }}
                   >
                     <Divider dashed>
-                      {/* <Typography.Title level={5}>Showcase</Typography.Title> */}
                     </Divider>
                   </div>
                   {item.images && (
                     <div
                       style={{
-                        // height: "20rem",
                         width: "25rem",
-                        // scale: 0.5,
                       }}
                     >
                       <CarousellView
@@ -141,15 +130,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
 
               <div className="relative w-full  ">
-                {/* {item.content}{" "} */}
                 <div>
                   <List
                     size="small"
-                    style={
-                      {
-                        // paddingRight: "8rem",
-                      }
-                    }
                     dataSource={item.pointers}
                     renderItem={(item) => (
                       <div>
@@ -158,8 +141,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                         <List.Item
                           style={{
                             justifyContent: "center",
-
-                            // textAlign: "center",
                           }}
                         >
                           <Typography.Text className="xs:text-xs sm:text-sm md:text-md lg:text-xm xl:text-xm ">

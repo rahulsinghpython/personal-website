@@ -29,13 +29,7 @@ export const TechnologyCards: React.FC = () => {
   }, []);
 
   return (
-    <div
-      style={
-        {
-          // width: "20%",
-        }
-      }
-    >
+    <div>
       <FocusCards cards={skills}></FocusCards>
     </div>
   );

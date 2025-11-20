@@ -13,7 +13,6 @@ import React, {
   useRef,
   useState,
 } from "react";
-// import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Button, Image, ImageProps } from "antd";
 
@@ -106,7 +105,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
+              "max-w-7xl mx-auto"
             )}
           >
             {items.map((item, index) => (
@@ -247,7 +246,6 @@ export const Card = ({
       </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        // onClick={handleOpen} //  disabled for now
         style={{
           background: "rgb(21 16 48 / var(--tw-bg-opacity))",
         }}
@@ -271,7 +269,6 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          // className="object-cover absolute z-10 inset-0"
         />
       </motion.button>
     </>
@@ -288,10 +285,8 @@ export const BlurImage = ({
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    // console.log("src", src),
 
     <Image
-      // preview={false}
       className={cn(
         "transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
@@ -303,7 +298,6 @@ export const BlurImage = ({
       height={height}
       loading="lazy"
       decoding="async"
-      // blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />

@@ -27,16 +27,13 @@ export const ProfileCard: React.FC<
         <Card
           style={{
             width: "28rem",
-            // letterSpacing:e",
             borderRadius: "22px",
-            // color: "cyan",
           }}
           cover={
             <img
               alt="profile picture"
               src={profilePic}
               style={{
-                // padding: "4rem",
                 paddingLeft: "4rem",
                 paddingRight: "4rem",
                 paddingTop: "1rem",

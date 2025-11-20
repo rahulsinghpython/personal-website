@@ -3,6 +3,21 @@ import { Timeline } from "../ui/timeline";
 export const TimelineView: React.FC = () => {
   const data = [
     {
+      title: "Cognizant",
+      name: "cognizant",
+      logo: "https://companieslogo.com/img/orig/CTSH_BIG.D-6e2ffe6b.png",
+      dates: "Dec 2024 - Present",
+      position: "Software Engineer",
+      pointers: [
+        "Built and deployed AI-driven products for GovTech and the Ministry of Digital Development and Information of Singapore (MDDI) supporting nationwide digital transformation.",
+        "Fullstack development using React (TypeScript) & Python Django stack",
+        "Worked closely with Data Scientists developing and launching new products that leverages large language models (LLMs) to provide analytics, insights and decision support.",
+        "Drag and drop interfaces with dynamic charting and visualisation developed on React.",
+        "Rolled out products across Whole-of-Government (WOG) infrastructure, ensuring compliance with security protocols and regulatory standards.",
+      ],
+      images: true,
+    },
+    {
       title: "Uniad",
       name: "uniad",
       logo: "https://www.uniad.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblue.400e6488.png&w=3840&q=75",

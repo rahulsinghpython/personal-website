@@ -2,6 +2,8 @@
 
 Welcome to the repository for my personal website! This site is a reflection of my journey, showcasing my projects, skills, and professional experiences. Built with modern web technologies, it’s designed to be fast, responsive, and visually engaging.
 
+[▶️ Live](https://rahul-portfolio-main.vercel.app/)
+
 ## 🚀 Features
 
 - **About Me** - Learn more about my background, skills, and passions.

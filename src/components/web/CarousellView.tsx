@@ -24,6 +24,10 @@ export const CarousellView: React.FC<CarousellViewProps> = (
       paths = import.meta.glob(
         "/src/assets/carousel/uniad/*.{png,jpg,jpeg,svg}"
       );
+    } else if (props.name === "cognizant") {
+      paths = import.meta.glob(
+        "/src/assets/carousel/cognizant/*.{png,jpg,jpeg,svg}"
+      );
     }
 
     const loadImages = async () => {

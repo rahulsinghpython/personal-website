@@ -1,5 +1,4 @@
 "use client";
-// import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "../../utils/cn";
 import { Image } from "antd";
@@ -61,14 +60,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div
-      className="grid grid-cols-1 md:grid-rows-2 gap-2 max-w-5xl mx-auto md:px-8 w-full"
-      style={
-        {
-          // height: "80vh",
-        }
-      }
-    >
+    <div className="grid grid-cols-1 md:grid-rows-2 gap-2 max-w-5xl mx-auto md:px-8 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

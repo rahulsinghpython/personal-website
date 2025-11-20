@@ -1,6 +1,5 @@
 import { Divider, Flex } from "antd";
 import { ProfileCard } from "../ui/cards/ProfileCard";
-// import { IntroView } from "./IntroView";
 import { ProjectView } from "./ProjectView";
 import { TechnologyCards } from "./TechnologyCards";
 import { TimelineView } from "./TimelineView";
